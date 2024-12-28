@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Unique button styles */
+.unique-btn-book {
+  background-color: #be9b19;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.unique-btn-book:hover {
+  background-color: #a37f12;
+}
+
+/* Modal Header */
+.unique-modal-header {
+  background-color: #be9b19;
+  color: white;
+}
+
+.unique-modal-title {
+  font-weight: bold;
+}
+
+/* Modal Content */
+.unique-modal-content {
+  border-radius: 12px;
+}
+
+/* Submit Button */
+.unique-btn-submit {
+  background-color: #be9b19;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.unique-btn-submit:hover {
+  background-color: #a37f12;
+}
+
+/* Form Labels */
+.unique-form-label {
+  color: #505050;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+/* Custom focus for form inputs */
+.unique-form-input:focus {
+  border-color: #be9b19;
+  box-shadow: 0 0 0 0.2rem rgba(190, 155, 25, 0.25);
+}
+
+/* Form container spacing */
+.unique-form-spacing {
+  margin: 25px 0;
+}
+
+
+.modal-body{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .modal-dialog {
+    top: 5%;
+  }
+}

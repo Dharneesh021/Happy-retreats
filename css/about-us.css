@@ -1,0 +1,575 @@
+/* Universal Reset for all elements */
+
+
+                  /*CSS FOR PAGE BANNER  */
+
+.page-banner {
+    background-image: url('/img/About/IMG_8775.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Ensures the pseudo-element does not spill outside */
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure it stays below the content */
+}
+
+.page-banner * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the dimmed background */
+}
+
+.page-banner .banner-content {
+    max-width: 600px;
+    text-align: center;
+    /* Center text horizontally */
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.breadcrumb-container1 {
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.breadcrumb-container1 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.breadcrumb-container1 a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-container1 span {
+    color: goldenrod;
+    cursor: default;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-banner {
+        height: 300px;
+    }
+
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+
+    .breadcrumb-container1 {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+}
+
+
+.button-style{
+    background-color: #be9b19;
+
+}
+.button-style:hover{
+    background-color: #eea92a;
+}
+
+
+
+
+
+          
+             /* <!-- CSS FOR SLIDER --> */
+    .new-section {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .left-section {
+        width: 48%;
+    }
+
+    .right-section {
+        width: 48%;
+        position: relative;
+    }
+
+    .left-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .left-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .list-points {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .list-points li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+
+    .list-points li i {
+        margin-right: 10px;
+        font-size: 1.3rem;
+        color: #007bff;
+    }
+
+    /* Slider styles */
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .slider-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .slider-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+       
+    }
+    @media (min-width: 1024px) and (max-width: 1440px) {
+        .slider-images img {
+
+        margin-top: 75px;
+       
+    }
+    }
+
+
+
+    /* Navigation buttons */
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .slider-button.left {
+        left: 10px;
+    }
+
+    .slider-button.right {
+        right: 10px;
+    }
+
+    @media (min-width: 1000px)and (max-width: 1900px) {
+
+        .slider-button.left {
+            margin-top: 10%;
+        }
+    
+        .slider-button.right {
+            margin-top: 10%;
+        }
+
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .new-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-section, .right-section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .slider-head{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight:bold;
+
+    }
+    .slider-head1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight:bold;
+
+    }
+    .section-head{
+        /* text-align: center; */
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight:bold;
+
+    }
+
+
+             /* <!-- css for review --> */
+
+          * {
+      box-sizing: border-box;
+    }
+
+    /* Custom CSS for Review Cards */
+    .review-card {
+      width: 90%;
+      max-width: 300px; /* Fixed width */
+      height: 290px; /* Fixed height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: auto; /* Center alignment */
+    }
+
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      margin-top: 10px;
+    }
+
+    .review-card h5 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .review-card .star-rating {
+      color: #ffc107;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .review-card p {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #555;
+      flex-grow: 1;
+      /* overflow: hidden; */
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      max-height: 100px;
+    }
+
+    .slick-slider {
+      overflow: hidden;
+      max-width: 100%;
+      margin: 20px 0 auto;
+    }
+
+    .slick-slide {
+      padding: 0 10px; /* Add spacing between cards */
+      box-sizing: border-box;
+    }
+
+    /* Custom positioning for dots */
+    .slick-dots {
+      margin-top: 15px; /* Space between slider and dots */
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-dots li {
+      margin: 0 5px; /* Space between dots */
+    }
+
+    /* Make dots visible and black */
+    .slick-dots li button:before {
+      font-size: 16px;
+      color: #000; /* Black dots */
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: #007bff; /* Blue for active dot */
+    }
+
+          
+            /* Animation for the reviews section */
+.reviews {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reviews.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure it works on smaller devices too */
+@media (max-width: 768px) {
+    .reviews {
+        transition: opacity 1s ease, transform 1s ease;
+    }
+}
+
+
+
+                  /* CSS FOR COUNTER CARDS */
+                 
+                 
+                  .counter-card {
+                    padding: 20px;
+                    text-align: center;
+                    background-color: #be9a1986;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+        
+                .counter-value {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+        
+                .container {
+                    /* margin-top: 30px; */
+                    margin-bottom: 10px;
+                }
+        
+                @media (max-width: 768px) {
+                    .counter-card {
+                        margin-bottom: 15px;
+                    }
+                }
+
+            /* CSS FOR SECOND CONTAINER */
+
+    .image-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;  /* Gap between images */
+        opacity: 0;
+        animation: fadeInLeft 1.5s forwards; /* Animation for images */
+    }
+
+    .image-item {
+        width: 48%; /* Adjust the width for two images per row */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .image-section img {
+        width: 100%;  /* Set image to fill the container */
+        height: auto;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .image-section img.visible {
+        opacity: 1;
+    }
+
+    .content-section {
+        padding: 40px;
+        font-size: 1.2rem;  /* Increase font size */
+        opacity: 0;
+        animation: fadeInRight 1.5s forwards; /* Animation for content */
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .btn-register {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center; /* Align icon and text */
+        justify-content: center;
+        margin-top: 20px;  /* Space between content and button */
+    }
+
+    .btn-register i {
+        margin-right: 10px; /* Space between icon and text */
+    }
+    @media (max-width: 768px) {
+        .image-section {
+           
+            gap: 12px; /* Reduce gap for mobile */
+        }
+
+        .image-section img {
+          
+            margin-bottom: 10px;
+        }
+
+        .content-section {
+            text-align: center; /* Center text for mobile view */
+            padding:10px;
+        }
+
+        .btn-register {
+            width: 100%; /* Full-width button on mobile */
+        }
+    }
+
+    /* Smooth zoom-in animation for images */
+.image-section .image-item img {
+    transform: scale(0.9); /* Initial smaller size */
+    opacity: 0; /* Initially invisible */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.image-section .image-item img.visible {
+    transform: scale(1); /* Zoom to normal size */
+    opacity: 1; /* Fully visible */
+}
+
+/* Keyframe for subtle hover effect */
+.image-section .image-item img:hover {
+    transform: scale(1.1); /* Slightly zoom further on hover */
+    transition: transform 0.5s ease; /* Smooth hover effect */
+}
+
+                /* ANIMATION FOR COUNTER CARDS */
+
+.counter-card {
+    background: #be9b1b83;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.counter-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.counter-card:hover .counter-value {
+   
+}
+
+.counter-card p {
+    margin: 0;
+    font-size: 1.2rem;
+  
+    transition: color 0.3s ease;
+}
+
+.counter-card:hover p {
+    color: #4e3e02;
+}
+
+@media (max-width: 576px) {
+    .counter-value {
+        font-size: 2rem;
+    }
+
+    .counter-card p {
+        font-size: 1rem;
+    }
+}
+
+    
+
+            /* carousel slider */
+
+
+            .review-text {
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+            .review-author {
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            #reviewSlider {
+                padding: 80px 0;
+            }
+            .review-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                padding: 20px;
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right: 20px;
+                border: 3px solid #ddd;
+            }
+            .carousel-inner {
+                max-width: 800px;
+                margin: auto;
+            }

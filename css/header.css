@@ -1,0 +1,154 @@
+/* header */
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        
+        .btn-primary1{
+            background-color: #be9b19 !important;
+            border: none !important;
+            font-size: 1.2rem !important;
+            padding: 4px 10px !important;
+            margin-left: 8px !important;
+            border-radius: 7px;
+        }
+
+        .btn-primary1:hover{
+            background-color: #eea92a !important;
+          
+        }
+        
+
+        /* Navbar Styles */
+        .navbar {
+            transition: background-color 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.708);
+        }
+
+
+        .navbar-solid {
+            background: rgba(0, 0, 0, 0.932) !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-toggler{
+            background-color: rgba(255, 255, 255, 0.477) !important;
+        }
+
+        
+        
+        .navbar .nav-link {
+            color: #ffffff; /* Muted dark gray text */
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-left: 25px;
+            letter-spacing: 1px; /* Modern typography */
+            position: relative;
+            transition: color 0.4s ease, font-weight 0.4s ease;
+        }
+        
+        .navbar .nav-link:hover {
+            color: goldenrod; /* Vibrant orange highlight */
+            font-weight: 500; /* Emphasize the hover state */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds a subtle glow */
+        }
+        
+        /* Elegant Hover Animation (Slide-In Underline) */
+        .navbar .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: goldenrod; /* Matches hover color */
+            transition: all 0.4s ease;
+            transform: translateX(-50%);
+        }
+        
+        .navbar .nav-link:hover::after {
+            width: 80%; /* Creates a visible underline */
+        }
+
+        .navbar .nav-link1{
+            color: #ffffff; /* Muted dark gray text */
+            font-size: 15px !important;
+            font-weight: 200;
+            text-transform: uppercase;
+            margin-left: 25px;
+            letter-spacing: 1px; /* Modern typography */
+            position: relative;
+            text-decoration: none;
+            padding: 12px 10px 12px 10px !important;
+            text-align: center;
+            position: relative;
+            top: 10%;
+            left: 20%;
+        }
+        .navbar .nav-link1:hover{
+            color: #ffffff !important;
+            font-weight: 200;
+        }
+
+        .navbar-solid .nav-link {
+            color: rgb(255, 255, 255) !important;
+        }
+
+        /* Offcanvas Drawer Styles */
+        .offcanvas {
+            background-color: white;
+        }
+
+        .offcanvas .nav-link {
+            color: black !important;
+        }
+
+
+        /* Media Query for Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .btn-primary1{
+        background-color:  #be9b19 !important;
+        border: none !important;
+        font-size: 1.2rem !important;
+        padding: 4px 10px !important;
+        margin-left: 8px !important;
+        border-radius: 7px;
+        width: fit-content;
+    }
+
+    .btn-primary1:hover{
+        background-color:  #eea92a !important;
+      
+    }
+   
+}
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+ 
+    .btn-primary1{
+        background-color:  #be9b19 !important;
+        border: none !important;
+        font-size: 1.2rem !important;
+        padding: 4px 10px !important;
+        margin-left: 8px !important;
+        border-radius: 7px;
+        width: fit-content;
+    }
+
+    .btn-primary1:hover{
+        background-color:#eea92a !important;
+      
+    }
+}

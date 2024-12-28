@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Happy Retreats || About Us</title>
+
+     <!-- Meta Tags for SEO -->
+    <meta name="title" content="Happy Retreats - Luxurious Eco-Friendly Villas & Resorts in Bangalore">
+    <meta name="description" content="Discover peaceful retreats at Happy Retreats in Bangalore. Experience eco-friendly villas, private pools, and exclusive packages for staycations, events, and more.">
+    <meta name="keywords" content="Happy Retreats, resorts in Bangalore, eco-friendly villas, private pools, staycation packages, events venue, retreats near Bangalore, luxurious resorts, farmhouses in Bangalore">
+    <meta name="author" content="Happy Retreats">
+    <meta name="robots" content="about, follow">
+
+
+    <!--Title Icon -->
+    <link rel="icon" href="img/Title Icon.png" type="image/x-icon">
+
+
+    <!-- Bootstrap 5.3.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script> -->
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  
+    <!-- FAFA ICON -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+      <!-- CSS FOR ABOUT-US -->
+      <link rel="stylesheet" href="css/about-us.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="/css/footer.css">
+      <link rel="stylesheet" href="/css/Icons.css">
+      <link rel="stylesheet" href="/css/popup.css">
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+<header>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+          <a href="/index.html"> <img id="navbarLogo" src="img/logo/2.png" alt="Logo" style="height: 10vh;"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+  
+                  <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link1 btn-primary1" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <!-- Offcanvas Drawer Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" style="width: 250px;">
+      <div class="offcanvas-header " style="padding-bottom: 0 !important;">
+          <h5 class="offcanvas-title fw-bold">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <hr>
+      <div class="offcanvas-body" style="padding-top: 0 !important;">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="about-us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="package.html">Packages</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="contact.html">Contact Us</a></li>
+  
+              <li class="nav-item"><a class="nav-link nav-link1 btn-primary1" style="color: white !important;" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+          </ul>
+      </div>
+  </div>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="uniqueBookNowModal" tabindex="-1" aria-labelledby="uniqueBookNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="unique-modal-content modal-content">
+      <!-- Modal Header -->
+      <div class="unique-modal-header modal-header">
+        <h5 class="unique-modal-title modal-title" id="uniqueBookNowModalLabel">BOOK NOW</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form id="uniqueBookNowForm">
+          <!-- Name Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueName" class="unique-form-label">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control unique-form-input" id="uniqueName" placeholder="Enter your name" required>
+          </div>
+          <!-- Mail ID Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueMailId" class="unique-form-label">Mail ID <span class="text-danger">*</span></label>
+            <input type="email" class="form-control unique-form-input" id="uniqueMailId" placeholder="Enter your mail ID" required>
+          </div>
+          <!-- Check-in Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckInDate" class="unique-form-label">Check-in Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckInDate" required>
+          </div>
+          <!-- Check-out Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckOutDate" class="unique-form-label">Check-out Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckOutDate"  required>
+          </div>
+          <!-- Number of Persons -->
+          <div class="unique-form-spacing">
+            <label for="uniqueNumPersons" class="unique-form-label">Number of Persons <span class="text-danger">*</span></label>
+            <input type="number" class="form-control unique-form-input" id="uniqueNumPersons" min="1" placeholder="Enter number of persons" required>
+          </div>
+          <!-- Submit Button -->
+          <div class="d-grid unique-form-spacing">
+            <button type="submit" class="unique-btn-submit btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+   <!-- Page Banner -->
+  <section class="page-banner1">
+            <div class="page-banner">
+                <div class="banner-content">
+                    <h1>About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <div class="breadcrumb-container1">
+                            <a href="/index.html"><span> Home >></span> </a> <a href="#"> About Us </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+  </section>
+
+
+
+   <!--  SECOND SECTION  -->
+  <section class="container my-5">
+      <div class="row">
+          <!-- Left Side: Images Section -->
+          <div class="col-md-6 image-section" id="imageSection">
+              <div class="image-item">
+                  <img src="img/About/1.jpg" alt="Image 1" class="img-fluid fade-in rounded">
+              </div>
+              <div class="image-item">
+                  <img src="img/About/2.jpg" alt="Image 2" class="img-fluid fade-in rounded">
+              </div>
+              <div class="image-item">
+                  <img src="img/About/3.jpg" alt="Image 3" class="img-fluid fade-in rounded">
+              </div>
+              <div class="image-item">
+                  <img src="img/About/4.jpg" alt="Image 4" class="img-fluid fade-in rounded">
+              </div>
+          </div>
+
+          <!-- Right Side: Text Content Section -->
+          <div class="col-md-6 content-section" id="contentSection">
+              <h3 class="section-head">ABOUT <span class="text-warning">A HAPPY RETREATS </span></h3>
+              <p>We are a 2 acre private farm house located in Kumbalgodu, Bangalore With a Unique Eco friendly Wooden Homes with Private Pool</p>
+              <p>Staycation getaways, Birthday celebration, Intimate wedding venue, Bachelorette Event, Haladi Event, Mehndi Event, Get Togethers, Anniversaries etc.</p>
+
+      
+                      <!-- Button Below Content -->
+              <button class="btn btn-register button-style text-light" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+                  <i class="fas fa-calendar-check text-light"></i> Book Now
+              </button>
+          </div>
+      </div>
+  </section>
+
+
+
+
+  <!-- SLIDER AND LIST -->
+  <section class="mb-6">
+    <div class="container">
+        <h1 class="text-center slider-head mb-4">WHY YOU CHOOSE OUR <span class="text-warning">RESORT</span></h1>
+        <p class="text-center mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        
+        <div class="row align-items-center">
+            <!-- Left Side: Heading, Subheading, and List -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2>We provide</h2>
+                <h3 class="mb-4">Best service to our customers</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Wellness & spa</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Free Wi-Fi</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Swimming pool</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Delicious breakfast</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> High customer satisfaction</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Good parking & security</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Clean room service</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Discount coupons</li>
+                </ul>
+            </div>
+            
+            <!-- Right Side: Image Slider -->
+            <div class="col-md-6">
+                <div id="resortSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/About/5.jpg" class="d-block w-100 rounded" alt="Slider Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/About/6.jpg" class="d-block w-100 rounded" alt="Slider Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/About/7.jpg" class="d-block w-100 rounded" alt="Slider Image 3">
+                        </div>
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#resortSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#resortSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Reviews Section -->
+  <section class="reviews pt-5">
+    <div class="container text-center">
+      <h1 class="mb-4">Customer Reviews</h1>
+      <div class="slick-slider">
+        <!-- Card 1 -->
+        <div class="review-card mx-5">
+          <img src="img/testimonial03.jpg" alt="John Doe">
+          <h5>John Doe</h5>
+          <div class="star-rating">
+            ★★★★★
+          </div>
+          <p>
+            "The garden features bonsai trees. Each of the very large rooms includes a suite, a spacious balcony, and an extra-large bathroom."
+          </p>
+        </div>
+
+        <!-- Card 2-->
+        <div class="review-card mx-5">
+          <img src="img/testimonials01.webp" alt="Samuel Adams">
+          <h5>Samuel Adams</h5>
+          <div class="star-rating">
+            ★★★★★
+          </div>
+          <p>
+            "We had a quick get-together with friends and loved our stay. Peaceful location and access to a good music system."
+          </p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="review-card mx-5">
+          <img src="img/testimonial3.jpg" alt="Emily Clark">
+          <h5>Emily Clark</h5>
+          <div class="star-rating">
+            ★★★★★
+          </div>
+          <p>
+            "A very enjoyable experience! The staff was accommodating, and the facilities were excellent. We’ll definitely visit again."
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="review-card mx-5">
+          <img src="img/testimonial03.jpg" alt="Jane Smith">
+          <h5>Jane Smith</h5>
+          <div class="star-rating">
+            ★★★★★
+          </div>
+          <p>
+            "Good place very relaxing location. Beautiful sunrise and sunset. Perfect for large family gatherings."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+      
+
+  <!-- CountDown Section -->
+  <section class="counter1">
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="counter-card">
+                    <div class="counter-value" id="counter1">0+</div>
+                    <p>New friendships</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="counter-card">
+                    <div class="counter-value" id="counter2">0+</div>
+                    <p>International Guests</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="counter-card">
+                    <div class="counter-value" id="counter3">0+</div>
+                    <p>Five stars rating</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="counter-card">
+                    <div class="counter-value" id="counter4">0+</div>
+                    <p>Served Breakfast</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+        <!-- Footer -->
+        <section class="ezy__footer8">      
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mt-4 mt-lg-0">
+                <img src="img/logo/2.png" class="img-fluid" alt="logo"  height="100px" width="100px" style="margin-left:30px; padding-bottom: 16px;"/>
+                <p class="mt-2 text-light">Our platform helps you create and innovate seamlessly, offering solutions tailored to your needs.</p>
+                <ul class="ezy__footer8-social nav">
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/ahappyretreats?igsh=NXJ2Y3k2b3BxdmNk" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="/about-us.html">Reviews</a></li>
+                      <li><a href="/blog.html">Our Amenities</a></li>
+                      <li><a href="/contact.html">Get in Touch</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Extra Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="package.html">Packages</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Get In Touch</h5>
+                    <div>
+                        <input type="text" placeholder="Enter your Email" class="rounded1">
+                        <button class="btn btn-primary mt-2">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="mt-4 ezy__footer8-copyright">
+              <span>Copyright &copy; Resort, All rights reserved</span>
+              <div>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- Footer Section -->
+    
+        
+<!-- WhatsApp Button -->
+    <button class="wpBtn">
+      <div class="sign">
+        <i class="fab fa-whatsapp whatsappIcon" style="color: white; font-size: 30px;"></i>
+      </div>
+      
+      <div class="text">
+        <a href="https://wa.me/9071135381" target="_blank" style="color: white; text-decoration: none;">
+          Whatsapp Us
+        </a>
+      </div>
+    </button>
+    
+    
+    
+ <!-- Phone Icon  -->
+  <button class="phbutton">
+      <a href="tel:+91 9071135381" class="phbutton">
+          <i class="fas fa-phone-alt phoneIcon" style="transform: rotate(90deg); color: white;"></i>
+      </a>
+     </button>
+
+
+
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?ver=1.0"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<!-- JS -->
+ <script src="/js/index.js"></script>
+<script src="js/about-us.js"></script>
+<script src="js/popup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Universal Reset for all elements */
+
+
+                  /*CSS FOR PAGE BANNER  */
+
+                  .page-banner {
+    background-image: url('/img/contact/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Ensures the pseudo-element does not spill outside */
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure it stays below the content */
+}
+
+.page-banner * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the dimmed background */
+}
+
+
+.page-banner .banner-content {
+    max-width: 600px;
+    text-align: center;
+    /* Center text horizontally */
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.breadcrumb-container1 {
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.breadcrumb-container1 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.breadcrumb-container1 a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb-container1 span {
+    color: goldenrod;
+    cursor: default;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-banner {
+        height: 300px;
+    }
+
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+
+    .breadcrumb-container1 {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+}
+
+
+.btn-outline-warning:hover{
+    color: white;
+}

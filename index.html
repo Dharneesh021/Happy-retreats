@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Meta Tags for SEO -->
+    <meta name="title" content="Happy Retreats - Luxurious Eco-Friendly Villas & Resorts in Bangalore">
+    <meta name="description" content="Discover peaceful retreats at Happy Retreats in Bangalore. Experience eco-friendly villas, private pools, and exclusive packages for staycations, events, and more.">
+    <meta name="keywords" content="Happy Retreats, resorts in Bangalore, eco-friendly villas, private pools, staycation packages, events venue, retreats near Bangalore, luxurious resorts, farmhouses in Bangalore">
+    <meta name="author" content="Happy Retreats">
+    <meta name="robots" content="index, follow">
+
+    <title>A Happy Retreats || Home</title>
+
+      <!--Title Icon -->
+    <link rel="icon" href="img/Title Icon.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+      <!-- Fontasome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="css/Icons.css">
+
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+<header>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+          <a href="/index.html"> <img id="navbarLogo" src="img/logo/2.png" alt="Logo" style="height: 10vh;"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+  
+                  <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link1 btn-primary1" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <!-- Offcanvas Drawer Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" style="width: 250px;">
+      <div class="offcanvas-header " style="padding-bottom: 0 !important;">
+          <h5 class="offcanvas-title fw-bold">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <hr>
+      <div class="offcanvas-body" style="padding-top: 0 !important;">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="about-us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="package.html">Packages</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="contact.html">Contact Us</a></li>
+  
+              <li class="nav-item"><a class="nav-link nav-link1 btn-primary1" style="color: white !important;" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+          </ul>
+      </div>
+  </div>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="uniqueBookNowModal" tabindex="-1" aria-labelledby="uniqueBookNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="unique-modal-content modal-content">
+      <!-- Modal Header -->
+      <div class="unique-modal-header modal-header">
+        <h5 class="unique-modal-title modal-title" id="uniqueBookNowModalLabel">BOOK NOW</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form id="uniqueBookNowForm">
+          <!-- Name Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueName" class="unique-form-label">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control unique-form-input" id="uniqueName" placeholder="Enter your name" required>
+          </div>
+          <!-- Mail ID Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueMailId" class="unique-form-label">Mail ID <span class="text-danger">*</span></label>
+            <input type="email" class="form-control unique-form-input" id="uniqueMailId" placeholder="Enter your mail ID" required>
+          </div>
+          <!-- Check-in Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckInDate" class="unique-form-label" >Check-in Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckInDate" required>
+          </div>
+          <!-- Check-out Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckOutDate" class="unique-form-label">Check-out Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckOutDate"  required>
+          </div>
+          <!-- Number of Persons -->
+          <div class="unique-form-spacing">
+            <label for="uniqueNumPersons" class="unique-form-label">Number of Persons <span class="text-danger">*</span></label>
+            <input type="number" class="form-control unique-form-input" id="uniqueNumPersons" min="1" placeholder="Enter number of persons" required>
+          </div>
+          <!-- Submit Button -->
+          <div class="d-grid unique-form-spacing">
+            <button type="submit" class="unique-btn-submit btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <video class="hero-video" autoplay loop muted>
+        <source src="img/videos/new.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1 class="mdquery">Spend Quality Holidays With Us</h1>
+        <p class="mdquery1" style="color: #f9a825;">Enjoy The World of Relaxation & Tranquility</p>
+    </div>
+</div>
+
+<main>
+<!----------------------------------------------------------------------------------------------->
+<!-- Booking Section -->
+<section class="booking-section py-5">
+  <div class="container">
+      <div class="booking-container">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+              <div class="booking-item">
+                  <label for="arrival" class="form-label">Arrival Date</label>
+                  <input type="text" id="arrival" class="form-control" placeholder="Choose Arrival Date" onfocus="(this.type='date')" onblur="(this.type='text')" />
+              </div>
+              <div class="booking-item">
+                  <label for="departure" class="form-label">Departure Date</label>
+                  <input type="text" id="departure" class="form-control" placeholder="Choose Departure Date" onfocus="(this.type='date')" onblur="(this.type='text')" />
+              </div>
+              <div class="booking-item">
+                  <label for="adults" class="form-label">Adults</label>
+                  <input type="number" class="form-control" id="adults" min="1" placeholder="Enter number of Adults" required>
+
+              </div>
+              <div class="booking-item">
+                  <label for="children" class="form-label">Children</label>
+                  <input type="number" class="form-control" id="children" min="1" placeholder="Enter number of Childrens" required>
+
+              </div>
+              <div class="booking-item">
+                  <button id="check-availability" class="btn btn-primary w-100 animated-btn mt-4">Check Availability</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- ------------------------------------------------------------------------------------------------ -->
+<!-- about  -->
+<!-- About Us Section -->
+<section class="about-us-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="section-title fade-in-left"><span style="color: #fbc02d;">About</span> Happy Retreats</h2>
+
+                <!-- Who Are We Section -->
+                <h4 class="fade-in-left" >Who Are We?</h4>
+                <p class="fade-in-left">We are a 2-acre private farm in Kumbalgodu, Bangalore, offering a peaceful atmosphere with eco-friendly wooden villas and private pools for a serene retreat.</p>
+
+                <!-- What Do We Offer Section -->
+                <h4 class="fade-in-left">What Do We Offer?</h4>
+                <p class="fade-in-left">We provide a perfect venue for staycations, birthday parties, intimate weddings, anniversaries, and family events.</p>
+
+                <!-- More About Us Button -->
+                <a href="about-us.html" class="abthome"><button class="btn btn-more-about-us">More About Us</button></a>
+            </div>
+            <div class="col-lg-6 fade-in-right">
+                <img src="img/home/IMG_2477.jpg" alt="Resort imge" class="img-fluid rounded imge-animate">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------------------- -->
+<!--  branches -->
+  <!-- Experience Section -->
+  <section class="experience-section" style="background: url('img/home/new.jpg') no-repeat center center / cover !important; background-attachment: fixed !important;" >
+    <h2 class="mdquery">Choose us once, and you will choose us always.</h2>
+    <p class="mdquery1" style="color: #ffffff;">
+      Relax and unwind at our beautiful resort locations. Each branch offers unique experiences, top-notch amenities, and stunning views for your perfect getaway.
+    </p>
+    <a href="/blog.html" style="text-decoration: none;"><button class="btn btn-lg">Discover more</button></a>
+  </section>
+
+  <!-- Cards Section -->
+  <div class="container cards-container">
+    <div class="row gy-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-card">
+          <img src="img/logo/Ayana.png" alt="" style="width: auto;">
+          <h5>AYANA RETREAT</h5>
+          <p>Tortor mus ligula vitae tristique nec amet condimentum non placerat.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-card">
+          <img src="img/logo/aira.png" alt="" style="width: auto;">
+          <h5>AIRA RETREAT</h5>
+          <p>Tortor mus ligula vitae tristique nec amet condimentum non placerat.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-card">
+          <img src="img/logo/1.png" alt="" style="width: auto;">
+          <h5>AIKYA FARM</h5>
+          <p>Tortor mus ligula vitae tristique nec amet condimentum non placerat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- Packages -->
+
+<!-- Exclusive Packages -->
+<section class="fade-in">
+  <div class="our-packages-section">
+      <div class="container">
+        <h2 class="packages-heading">Our Exclusive Packages</h2>
+        <p class="packages-description">Explore our curated resort packages designed to offer a memorable and luxurious experience for all types of travelers.</p>
+        <div class="row">
+          <!-- Package 1 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="package-card">
+              <img src="/img/home/IMG_8434.jpg" alt="Package 1">
+              <button class="book-now-btn" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+                <i class="fas fa-book"></i> Book Now
+              </button>
+              <h4 class="text-center py-2 mt-2">Day Out Package</h4>
+              <p class="package-price"> Rs.1,499 person</p>
+            </div>
+          </div>
+          <!-- Package 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="package-card">
+              <img src="img/home/IMG_0275.jpg" alt="Package 2">
+              <button class="book-now-btn" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+                <i class="fas fa-book"></i> Book Now
+              </button>
+              <h4 class="text-center py-2 mt-2">Staycation With Food Package</h4>
+              <p class="package-price">Rs. 3,500 person</p>
+            </div>
+          </div>
+          <!-- Package 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="package-card">
+              <img src="img/home/IMG_7536.jpg" alt="Package 3">
+              <button class="book-now-btn" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+                <i class="fas fa-book"></i> Book Now
+              </button>
+              <h4 class="text-center py-2 mt-2 ">Staycation WithOut Food Package</h4>
+              <p class="package-price">Rs. 2,000 /- person</p>
+            </div>
+          </div>
+          <!-- Package 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="package-card">
+              <img src="img/blog/Events.jpg" alt="Package 4">
+              <button class="book-now-btn" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+                <i class="fas fa-book"></i> Book Now
+              </button>
+              <h4 class="text-center py-2 mt-2">Events</h4>
+              <p class="package-price">Enquire for Price/- person</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- Private Villa Gallery Section -->
+
+
+<section id="gallery" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="gallery-title" data-aos="fade-up">Private Villa Gallery</h2>
+      <p class="gallery-subtitle" data-aos="fade-up" data-aos-delay="100">Explore exclusive glimpses of our resort</p>
+    </div>
+    <div class="row g-4">
+      <!-- Image 1 -->
+      <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card animate_animated animate_fadeInUp">
+          <img src="img/home/1.jpg" class="card-img-top open-modal" alt="Gallery Image 1" data-img-src="img/home/1.jpg">
+          <button class="more-btn"><a class="links" href="gallery.html">View More</a></button>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card animate_animated animate_fadeInUp">
+          <img src="img/home/2.jpg" class="card-img-top open-modal" alt="Gallery Image 2" data-img-src="img/home/2.jpg">
+          <button class="more-btn"><a class="links" href="gallery.html">View More</a></button>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="col-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card animate_animated animate_fadeInUp">
+          <img src="img/home/3.jpg" class="card-img-top open-modal" alt="Gallery Image 3" data-img-src="img/home/3.jpg">
+          <button class="more-btn"><a class="links" href="gallery.html">View More</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Gallery Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" class="img-fluid" src="" alt="Selected Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------------------------------------------------------------------------- -->
+
+
+
+
+<!-- -------------------------------------------------------------------------------- -->
+
+
+<!-- WhatsApp Button -->
+<button class="wpBtn">
+    <div class="sign">
+      <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+        ></path>
+      </svg>
+    </div>
+    
+    <div class="text">
+      <a href="https://wa.me/1234567890" target="_blank" style="color: white; text-decoration: none;">
+        Whatsapp Us
+      </a>
+    </div>
+    </button>
+    
+
+    
+    <!-- Phone Icon  -->
+    <button class="phbutton">
+    <a href="tel:+1234567890" class="phbutton">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon">
+        <path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path>
+      </svg>
+    </a>
+    </button>
+
+
+</main>
+
+
+
+        <!-- Footer -->
+        <section class="ezy__footer8">      
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mt-4 mt-lg-0">
+                <img src="img/logo/2.png" class="img-fluid" alt="logo"  height="100px" width="100px" style="margin-left:30px; padding-bottom: 16px;"/>
+                <p class="mt-2 text-light">Our platform helps you create and innovate seamlessly, offering solutions tailored to your needs.</p>
+                <ul class="ezy__footer8-social nav">
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/ahappyretreats?igsh=NXJ2Y3k2b3BxdmNk" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="/about-us.html">Reviews</a></li>
+                      <li><a href="/blog.html">Our Amenities</a></li>
+                      <li><a href="/contact.html">Get in Touch</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Extra Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="package.html">Packages</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Get In Touch</h5>
+                    <div>
+                        <input type="text" placeholder="Enter your Email" class="rounded1">
+                        <button class="btn btn-primary mt-2">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="mt-4 ezy__footer8-copyright">
+              <span>Copyright &copy; Resort, All rights reserved</span>
+              <div>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- Footer Section -->
+
+
+    <!-- WhatsApp Button -->
+    <button class="wpBtn">
+      <div class="sign">
+        <i class="fab fa-whatsapp whatsappIcon" style="color: white; font-size: 30px;"></i>
+      </div>
+      
+      <div class="text">
+        <a href="https://wa.me/9071135381" target="_blank" style="color: white; text-decoration: none;">
+          Whatsapp Us
+        </a>
+      </div>
+    </button>
+    
+    
+    
+        <!-- Phone Icon  -->
+        <button class="phbutton">
+          <a href="tel:+91 9071135381" class="phbutton">
+            <i class="fas fa-phone-alt phoneIcon" style="transform: rotate(90deg); color: white;"></i>
+          </a>
+          </button>
+
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<script src="js/index.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+.rounded1 {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.ezy__footer8 {
+    color: #fff;
+    padding: 50px 15px 20px 15px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(60deg, #000000 30%, #000000 70%);
+}
+
+.ezy__footer8 h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.ezy__footer8 h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 75%;
+    height: 3px;
+    background: #f4d03f;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.ezy__footer8 h5:hover::after {
+    height: 5px;
+    background-color: #be6f29;
+}
+
+.ezy__footer8 ul {
+    list-style-type: none; /* Remove bullets for the general list */
+    padding-left: 0;       /* Remove any padding */
+    font-size: 14px;
+    color: #f4d03f;
+    text-align: left;
+}
+
+.ezy__footer8 ul li {
+    margin-bottom: 10px;
+    padding-left: 0; /* Remove left padding */
+    text-indent: 0;  /* Ensure no indentation */
+}
+
+.ezy__footer8 ul li::before {
+    content: none; /* Remove the bullet point */
+}
+
+.ezy__footer8 ul.bulleted {
+    list-style-type: disc; /* Add bullets for these lists */
+    padding-left: 20px;    /* Add some padding to indent the bullets */
+}
+
+.ezy__footer8 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.ezy__footer8 a:hover {
+    color: #BE9B19;
+}
+
+.ezy__footer8-social {
+    text-align: left;
+    padding-left: 0;
+    list-style: none; /* Ensure no bullets here */
+}
+
+.ezy__footer8-social li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullets for social media icons */
+}
+
+.ezy__footer8-social li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ezy__footer8-social li a:hover {
+    transform: scale(1.2);
+    color: royalblue;
+}
+
+.ezy__footer8-copyright {
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ezy__footer8-copyright a {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .ezy__footer8 h5,
+    .ezy__footer8 ul,
+    .ezy__footer8 p {
+        text-align: left;
+    }
+
+    .ezy__footer8 ul {
+        font-size: 14px;
+    }
+
+    .ezy__footer8-social {
+        text-align: left;
+    }
+
+    .ezy__footer8 .rounded1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ezy__footer8 .btn {
+        width: 100%;
+    }
+
+    .ezy__footer8-copyright {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ezy__footer8-copyright a {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

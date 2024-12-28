@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="title" content="Happy Retreats - Luxurious Eco-Friendly Villas & Resorts in Bangalore">
+    <meta name="description" content="Discover peaceful retreats at Happy Retreats in Bangalore. Experience eco-friendly villas, private pools, and exclusive packages for staycations, events, and more.">
+    <meta name="keywords" content="Happy Retreats, resorts in Bangalore, eco-friendly villas, private pools, staycation packages, events venue, retreats near Bangalore, luxurious resorts, farmhouses in Bangalore">
+    <meta name="author" content="Happy Retreats">
+    <meta name="robots" content="blog, follow">
+
+
+  <title>A Happy Retreats || Blog</title>
+
+  <!--Title Icon -->
+  <link rel="icon" href="img/Title Icon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontasome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+   <!-- CSS -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/Icons.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/popup.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+          <a href="/index.html"> <img id="navbarLogo" src="img/logo/2.png" alt="Logo" style="height: 10vh;"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+  
+                  <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link1 btn-primary1" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <!-- Offcanvas Drawer Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" style="width: 250px;">
+      <div class="offcanvas-header " style="padding-bottom: 0 !important;">
+          <h5 class="offcanvas-title fw-bold">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <hr>
+      <div class="offcanvas-body" style="padding-top: 0 !important;">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="about-us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="package.html">Packages</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" style="padding-bottom: 24px !important;" href="contact.html">Contact Us</a></li>
+  
+              <li class="nav-item"><a class="nav-link nav-link1 btn-primary1" style="color: white !important;" href="/" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">Book Now</a></li>
+          </ul>
+      </div>
+  </div>
+
+
+  <!-- Modal -->
+<div class="modal fade" id="uniqueBookNowModal" tabindex="-1" aria-labelledby="uniqueBookNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="unique-modal-content modal-content">
+      <!-- Modal Header -->
+      <div class="unique-modal-header modal-header">
+        <h5 class="unique-modal-title modal-title" id="uniqueBookNowModalLabel">BOOK NOW</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form id="uniqueBookNowForm">
+          <!-- Name Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueName" class="unique-form-label">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control unique-form-input" id="uniqueName" placeholder="Enter your name" required>
+          </div>
+          <!-- Mail ID Input -->
+          <div class="unique-form-spacing">
+            <label for="uniqueMailId" class="unique-form-label">Mail ID <span class="text-danger">*</span></label>
+            <input type="email" class="form-control unique-form-input" id="uniqueMailId" placeholder="Enter your mail ID" required>
+          </div>
+          <!-- Check-in Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckInDate" class="unique-form-label">Check-in Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckInDate" required>
+          </div>
+          <!-- Check-out Date -->
+          <div class="unique-form-spacing">
+            <label for="uniqueCheckOutDate" class="unique-form-label">Check-out Date <span class="text-danger">*</span></label>
+            <input type="date" class="form-control unique-form-input" id="uniqueCheckOutDate"  required>
+          </div>
+          <!-- Number of Persons -->
+          <div class="unique-form-spacing">
+            <label for="uniqueNumPersons" class="unique-form-label">Number of Persons <span class="text-danger">*</span></label>
+            <input type="number" class="form-control unique-form-input" id="uniqueNumPersons" min="1" placeholder="Enter number of persons" required>
+          </div>
+          <!-- Submit Button -->
+          <div class="d-grid unique-form-spacing">
+            <button type="submit" class="unique-btn-submit btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+              
+<!-- Banner -->
+ <section class="page-banner1">
+  <div class="page-banner">
+      <div class="banner-content">
+          <h1>Blog</h1>
+          <nav aria-label="breadcrumb">
+              <div class="breadcrumb-container1">
+                  <a href="/index.html"><span> Home >></span> </a> <a href="#">Blog </a>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+</section>
+
+
+<!-- About -->
+<section class="about-us-section ">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-6 about-content">
+        <h2 class="about-heading">WHAT DO WE OFFER?</h2>
+        <p class="about-text">
+          Staycation getaways, Birthday celebration, Intimate wedding venue, Bachelorette Event, Haladi Event, Mehndi Event, Get Togethers, Anniversaries etc.
+        </p>
+        <p>
+          We have 4 bed rooms and we can accommodate upto 18pax With extra mattresses we can accommodate upto 22 people.
+        </p>
+        <div class="btn-wrapper">
+          <button class="btn book-now-btn1" data-bs-toggle="modal" data-bs-target="#uniqueBookNowModal">
+            <i class="fas fa-calendar-check"></i> Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 about-image-wrapper">
+        <img src="/img/blog/About.jpg" alt="About Us" class="about-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Featured Resort Blog Posts Section -->
+<section id="blog-posts" class="container-fluid py-5 ">
+  <h2 class="section-header ">Featured Resort Blog Posts</h2>
+  <div class="row text-center">
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="blog-card">
+        <img src="img/blog/img 1.jpg" alt="Blog 1">
+        <h5 class="mt-3">Experience Luxury Like Never Before</h5>
+        <p>Explore the ultimate luxury experience at our resort with exceptional services and world-class amenities.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="blog-card">
+        <img src="img/blog/img 2.jpg" alt="Blog 2">
+        <h5 class="mt-3">Unwind in the Best Infinity Pools</h5>
+        <p>Take a dip in our stunning infinity pools overlooking breathtaking ocean views. A perfect escape!</p>
+        <a href="#" class="btn" style="margin-top: 35px;">Read More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="blog-card">
+        <img src="img/blog/img 3.jpg" alt="Blog 3">
+        <h5 class="mt-3">Adventure Awaits at Our Resort</h5>
+        <p>Embark on an exciting adventure with hiking, zip-lining, and many other activities available at our resort.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- parallax -->
+<section class="parallax-card-section">     
+  <h1 class="mb-3" >A Happy Retreats Facilities</h1>
+  <p class="para1" style="margin-bottom: 20px;">Our Esteemed Facilities</p>
+  <div class="container">
+      <div class="row parallax-card-container">
+          <div class="col-lg-4 col-md-6 mb-4 ">
+              <div class="card parallax-card border border-warning">
+                  <div class="parallax-card-image m-4" style="background-image: url('img/blog/kids-play.jpg');"></div> <!-- Replace with your image URL -->
+                  <div class="parallax-card-body text-center">
+                      <h5 class="parallax-card-title">
+                          <i class="fas fa-puzzle-piece parallax-card-icon text-warning"></i>KIDS PLAY AREA</h5>
+                      <p class="parallax-card-text">We have a dedicated play area to keep your little ones completely engaged in different activities such as swing, jumper, kids swimming pool, and much more.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card parallax-card border border-warning">
+                  <div class="parallax-card-image m-4" style="background-image: url('img/blog/swim-pool.jpg');"></div> <!-- Replace with your image URL -->
+                  <div class="parallax-card-body text-center">
+                      <h5 class="parallax-card-title">
+                          <i class="fas fa-tint parallax-card-icon text-warning"></i>SWIMMING POOL </h5>
+                      <p class="parallax-card-text">Enjoy the calming effects of water in our clean and hygienic swimming pool. Swim away your worries and soak in the goodness of water.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card parallax-card border border-warning">
+                  <div class="parallax-card-image m-4" style="background-image: url('img/blog/tent.jpg');"></div> <!-- Replace with your image URL -->
+                  <div class="parallax-card-body text-center">
+                      <h5 class="parallax-card-title">
+                          <i class="fas fa-campground parallax-card-icon text-warning"></i>TENT STAY</h5>
+                      <p class="parallax-card-text">Bringing you the joyful combo of rain and dance with our rain dance facility! Show off your dance skills by dancing to the top music beats.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Hotel Amenities -->
+<section class="fade-in">
+  <div class="our-amenities-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <h2 class="packages-heading">Our Amenities</h2>
+        <!-- Left Side (Image) -->
+        <div class="col-lg-6 col-md-12">
+          <img src="img/blog/img 2.jpg" alt="Our Amenities" class="amenities-image">
+        </div>
+        <!-- Right Side (Card with Amenities List) -->
+        <div class="col-lg-6 col-md-12">
+          <div class="amenities-card">
+            <h3 class="amenities-heading">Our Amazing Amenities</h3>
+            <div class="amenities-list-container">
+              <ul class="amenities-list">
+                <li>FREE WIFI</li>
+                <li>TENT STAY</li>
+                <li>SAFETY PARKING</li>
+                <li>Hygiene Food</li>
+                <li>Indoor GAMES</li>
+              </ul>
+              <ul class="amenities-list">
+                <li>OUTDOOR GAMES</li>
+                <li>Soft Archery</li>
+                <li>Ludo King</li>
+                <li>Pallankuli</li>
+                <li>Playing Cards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+
+        <!-- Footer -->
+        <section class="ezy__footer8">      
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mt-4 mt-lg-0">
+                <img src="img/logo/2.png" class="img-fluid" alt="logo"  height="100px" width="100px" style="margin-left:30px; padding-bottom: 16px;"/>
+                <p class="mt-2 text-light">Our platform helps you create and innovate seamlessly, offering solutions tailored to your needs.</p>
+                <ul class="ezy__footer8-social nav">
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/ahappyretreats?igsh=NXJ2Y3k2b3BxdmNk" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="/about-us.html">Reviews</a></li>
+                      <li><a href="/blog.html">Our Amenities</a></li>
+                      <li><a href="/contact.html">Get in Touch</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Extra Links</h5>
+                    <ul class="bulleted">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="package.html">Packages</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4 mt-4 mt-lg-0">
+                    <h5>Get In Touch</h5>
+                    <div>
+                        <input type="text" placeholder="Enter your Email" class="rounded1">
+                        <button class="btn btn-primary mt-2">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="mt-4 ezy__footer8-copyright">
+              <span>Copyright &copy; Resort, All rights reserved</span>
+              <div>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- Footer Section -->
+    
+        
+    <!-- WhatsApp Button -->
+    <button class="wpBtn">
+      <div class="sign">
+        <i class="fab fa-whatsapp whatsappIcon" style="color: white; font-size: 30px;"></i>
+      </div>
+      
+      <div class="text">
+        <a href="https://wa.me/9071135381" target="_blank" style="color: white; text-decoration: none;">
+          Whatsapp Us
+        </a>
+      </div>
+    </button>
+    
+    
+    
+        <!-- Phone Icon  -->
+        <button class="phbutton">
+          <a href="tel:+91 9071135381" class="phbutton">
+            <i class="fas fa-phone-alt phoneIcon" style="transform: rotate(90deg); color: white;"></i>
+          </a>
+          </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+  <!-- JS -->
+   <script src="/js/index.js"></script>
+   <script src="/js/popup.js"></script>
+
+</body>
+</html>
